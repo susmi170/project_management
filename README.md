@@ -2,7 +2,7 @@
 This is a spring boot project which contains codebase for CRUD APIs needed for a project management system  
 This is a Project for "Project Managemnet Application"  
 Please find below Setup and Run process.  
-Setup and run :-  
+**Setup and run :-**    
 1.Please create a fork of this repo.  
 2.Git clone to your local system and open in IDE/ or setup via git link directly to your IDE  
 3.DB used H2 in memory with DB name:projectManagement, username : susmita , no passwrod. (http://localhost:8080/h2-console/)  
@@ -17,38 +17,38 @@ Setup and run :-
 10.to get all use /project/all with GET method   
 11.to delete use /project/{id} with DELETE method  
   
-note : we shoud use the resource as it is and use Rest method to define them , should not create endpoint like createProject or updateProject .   
+**note** : we shoud use the resource as it is and use Rest method to define them , should not create endpoint like createProject or updateProject .   
 as POST is dedicated to create project , PUT is for update , like wise GET and DELETE  
   
-swagger url:http://localhost:8080/swagger-ui/index.html#/   
+**swagger url**:---http://localhost:8080/swagger-ui/index.html#/   
 has all the details for each api and response code and all the details  
   
-Project table has below coloumns  
-ID,NAME,DESCRIPTION,STARTDATE,ENDDATE,STATUS,CREATEDBY,UPDATEDBY  
+**Project table has below columns**   
+**ID,NAME,DESCRIPTION,STARTDATE,ENDDATE,STATUS,CREATEDBY,UPDATEDBY**  
   
 ID is the primary key ,will be automatcailly genarted by sequence  
   
    
- ----Technology used:---  
- Java 17 with Spring boot  
- Lombok for data generation(constructor and getter ,setter)  
- Mapstruct:(ProjectDtoMapper.java) For converting Dto to Entity pojo and vice versa . In this project using ProjectDto for all api calls , and Project entity for Database table  
- ControllerAdvice: (PMExceptionHandlerControllerAdvice.java) -- To handle exception in a cerntarlized place and create custom exception  
+**----Technology used:---**    
+ **Java 17 with Spring boot**  
+ **Lombok** for data generation(constructor and getter ,setter)  
+ **Mapstruct**:(ProjectDtoMapper.java) For converting Dto to Entity pojo and vice versa . In this project using ProjectDto for all api calls , and Project entity for Database table  
+ **ControllerAdvice**: (PMExceptionHandlerControllerAdvice.java) -- To handle exception in a cerntarlized place and create custom exception  
 					(ProjectNotFoundException,MethodArgumentNotValidException,ProjectManagemnetException)  
-Open-API : for Swagger api documentation (http://localhost:8080/swagger-ui/index.html#/ )  
-Database: H2 inmemory DB with SPring data JPA  
-Junit for service layer method testing .(ProjectServiceTest.java)  
-Integration test for API testing (ProjectControllerIntegrationTest.java)  
- Build tool :Gradle  
+**Open-API** : for Swagger api documentation **(http://localhost:8080/swagger-ui/index.html#/ )**  
+**Database**: H2 inmemory DB with SPring data JPA  
+**Junit** for service layer method testing .(ProjectServiceTest.java)  
+**Integration test** for API testing (ProjectControllerIntegrationTest.java)  
+ **Build tool** :Gradle  
    
    
    
--------API details:----  
+**-------API details:----**  
 
-1.Create project :-  
-Endpoint :http://localhost:8080/project  
-Method: POST  
-Sample request:-  
+1.**Create project** :-  
+**Endpoint** :http://localhost:8080/project  
+**Method**: POST  
+**Sample request**:-  
 {  
      "name": "Project-2",  
      "description": "Test project2 ",  
@@ -71,12 +71,12 @@ Sample request:-
          "updatedBy": "John"  
  }  
  
-2.Update projcet :
+2.**Update projcet** :
   
   
-Endpoint :http://localhost:8080/project  
-Method: PUT  
-Sample request:-  
+**Endpoint** :http://localhost:8080/project  
+**Method**: PUT  
+**Sample request**:-  
 {  
      "id":"2",  
      "name": "Project-2",  
@@ -100,9 +100,9 @@ Sample request:-
      "updatedBy": "Susmita"  
  }  
    
- 3.Get Project by id :  
- Endpoint: http://localhost:8080/project/2  
- Method: GET  
+ 3.**Get Project by id** :  
+ **Endpoint**: http://localhost:8080/project/2  
+ **Method**: GET  
  Request:http://localhost:8080/project/2  
  {  
      "id": 2,  
@@ -116,9 +116,9 @@ Sample request:-
  }  
    
    
- 4.Get all projects:  
- Endpoint: http://localhost:8080/project/all  
- Method: GET  
+ 4.**Get all projects**:  
+ **Endpoint**: http://localhost:8080/project/all  
+**Method**: GET  
  Request:http://localhost:8080/project/all  
    
  Response:  
@@ -147,14 +147,14 @@ Sample request:-
   ]  
    
    
- 5.Delete a project by id:  
+ 5.**Delete a project by id**:  
  endpoint://localhost:8080/project/1  
- Method:DELETE  
- Request://localhost:8080/project/1  
- Response:  
+**Method**:DELETE  
+ **Request**://localhost:8080/project/1  
+ **Response**:  
  Project has been deleted successfully  ID :1  
   
-Swagger :  
+**Swagger** :  
 ![image](https://github.com/susmi170/project_management/assets/149704969/39990b2f-b9df-47d2-8462-d575d27a6ff7)  
 
  
