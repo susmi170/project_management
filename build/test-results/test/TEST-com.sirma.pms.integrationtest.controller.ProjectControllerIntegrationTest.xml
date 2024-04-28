@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sirma.pms.integrationtest.controller.ProjectControllerIntegrationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-04-28T11:07:55" hostname="5LTPKL3" time="1.121">
+  <properties/>
+  <testcase name="testGetProjectById()" classname="com.sirma.pms.integrationtest.controller.ProjectControllerIntegrationTest" time="0.752"/>
+  <testcase name="testGetAllProjects()" classname="com.sirma.pms.integrationtest.controller.ProjectControllerIntegrationTest" time="0.218"/>
+  <testcase name="testCreateProject()" classname="com.sirma.pms.integrationtest.controller.ProjectControllerIntegrationTest" time="0.048"/>
+  <testcase name="testUpdateProject()" classname="com.sirma.pms.integrationtest.controller.ProjectControllerIntegrationTest" time="0.041"/>
+  <testcase name="testDeleteProjectById()" classname="com.sirma.pms.integrationtest.controller.ProjectControllerIntegrationTest" time="0.045"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-04-28T16:37:51.334+05:30  INFO 13456 --- [project_management] [    Test worker] s.p.i.c.ProjectControllerIntegrationTest : Starting ProjectControllerIntegrationTest using Java 17.0.9 with PID 13456 (started by User in D:\sumanta\susmi\project\project_management)
+2024-04-28T16:37:51.337+05:30  INFO 13456 --- [project_management] [    Test worker] s.p.i.c.ProjectControllerIntegrationTest : No active profile set, falling back to 1 default profile: "default"
+2024-04-28T16:37:52.077+05:30  INFO 13456 --- [project_management] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28T16:37:52.134+05:30  INFO 13456 --- [project_management] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+2024-04-28T16:37:52.621+05:30  INFO 13456 --- [project_management] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-04-28T16:37:52.633+05:30  INFO 13456 --- [project_management] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-28T16:37:52.634+05:30  INFO 13456 --- [project_management] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28T16:37:52.717+05:30  INFO 13456 --- [project_management] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-28T16:37:52.719+05:30  INFO 13456 --- [project_management] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1355 ms
+2024-04-28T16:37:52.751+05:30  INFO 13456 --- [project_management] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-28T16:37:52.930+05:30  INFO 13456 --- [project_management] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:projectManagement user=SUSMITA
+2024-04-28T16:37:52.932+05:30  INFO 13456 --- [project_management] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-28T16:37:52.941+05:30  INFO 13456 --- [project_management] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:projectManagement'
+2024-04-28T16:37:53.058+05:30  INFO 13456 --- [project_management] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28T16:37:53.116+05:30  INFO 13456 --- [project_management] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-28T16:37:53.154+05:30  INFO 13456 --- [project_management] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-28T16:37:53.372+05:30  INFO 13456 --- [project_management] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28T16:37:53.418+05:30  WARN 13456 --- [project_management] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-28T16:37:54.208+05:30  INFO 13456 --- [project_management] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28T16:37:54.237+05:30  INFO 13456 --- [project_management] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T16:37:54.560+05:30  WARN 13456 --- [project_management] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28T16:37:55.044+05:30  INFO 13456 --- [project_management] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 63537 (http) with context path ''
+2024-04-28T16:37:55.053+05:30  INFO 13456 --- [project_management] [    Test worker] s.p.i.c.ProjectControllerIntegrationTest : Started ProjectControllerIntegrationTest in 3.996 seconds (process running for 5.225)
+2024-04-28T16:37:55.634+05:30  INFO 13456 --- [project_management] [o-auto-1-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-28T16:37:55.634+05:30  INFO 13456 --- [project_management] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-28T16:37:55.635+05:30  INFO 13456 --- [project_management] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Get Project by id response body ::{"id":2,"name":"p1","description":"p desc","startDate":"2024-04-28","endDate":"2024-04-28","status":"In-Progress","createdBy":"Susmita","updatedBy":"John"}
+Get Project by id response body ::[{"id":1,"name":"test","description":"test desc","startDate":"2024-04-28","endDate":"2024-04-28","status":"In-Progress","createdBy":"Susmita","updatedBy":"John"},{"id":2,"name":"p1","description":"p desc","startDate":"2024-04-28","endDate":"2024-04-28","status":"In-Progress","createdBy":"Susmita","updatedBy":"John"}]
+create response body ::ProjectDto(id=2, name=test, description=First description, startDate=2024-04-28, endDate=2024-04-28, status=In-Progress, createdBy=Susmita, updatedBy=John)
+Updated response body ::ProjectDto(id=3, name=test, description=updated, startDate=2024-04-28, endDate=2024-04-28, status=In-Progress, createdBy=Susmita, updatedBy=John)
+response body ::{"id":4,"name":"test","description":"test desc","startDate":"2024-04-28","endDate":"2024-04-28","status":"In-Progress","createdBy":"Susmita","updatedBy":"John"}
+respnse body ::Project has been deleted successfully  ID :4
+afterDeleteResponse:::{"errorMessage":"Project not found with given Id:4","requestedURI":"/project/4"}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
