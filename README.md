@@ -1,7 +1,7 @@
 # project_management
 This is a spring boot project which contains codebase for CRUD APIs needed for a project management system
 This is a Project for "Project Managemnet Application"
-
+Please find below Setup and Run process.
 Setup and run :-
 1.Please create a fork of this repo.
 2.Git clone to your local system and open in IDE/ or setup via git link directly to your IDE
