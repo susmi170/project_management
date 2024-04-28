@@ -72,89 +72,89 @@ Sample request:-
  }  
  
 2.Update projcet :
-
-
-Endpoint :http://localhost:8080/project
-Method: PUT
-Sample request:-
-{
-     "id":"2",
-     "name": "Project-2",
-     "description": "Test project2-updated ",
-     "startDate": "2024-04-27",
-     "endDate": "2024-04-27",
-     "status":"Started",
-     "createdBy":"Susmita",
-     "updatedBy":"Susmita"
- }
- 
- Response:
- {
-     "id": 2,
-     "name": "Project-2",
-     "description": "Test project2-updated ",
-     "startDate": "2024-04-27",
-     "endDate": "2024-04-27",
-     "status": "Started",
-     "createdBy": "Susmita",
-     "updatedBy": "Susmita"
- }
- 
- 3.Get Project by id :
- Endpoint: http://localhost:8080/project/2
- Method: GET
- Request:http://localhost:8080/project/2
- {
-     "id": 2,
-     "name": "Project-1",
-     "description": "Test project ",
-     "startDate": "2024-04-27",
-     "endDate": "2024-04-27",
-     "status": "In-Progress",
-     "createdBy": "Susmita",
-     "updatedBy": "John"
- }
- 
- 
- 4.Get all projects:
- Endpoint: http://localhost:8080/project/all
- Method: GET
- Request:http://localhost:8080/project/all
- 
- Response:
- 
- [
-       {
-           "id": 2,
-           "name": "Project-1",
-           "description": "Test project ",
-           "startDate": "2024-04-27",
-           "endDate": "2024-04-27",
-           "status": "In-Progress",
-           "createdBy": "Susmita",
-           "updatedBy": "John"
-       },
-       {
-           "id": 3,
-           "name": "Project-2",
-           "description": "Test project2 ",
-           "startDate": "2024-04-27",
-           "endDate": "2024-04-27",
-           "status": "In-Progress",
-           "createdBy": "Susmita",
-           "updatedBy": "John"
-       }
-  ]
- 
- 
- 5.Delete a project by id:
- endpoint://localhost:8080/project/1
- Method:DELETE
- Request://localhost:8080/project/1
- Response:
- Project has been deleted successfully  ID :1
-
-Swagger :
-![image](https://github.com/susmi170/project_management/assets/149704969/39990b2f-b9df-47d2-8462-d575d27a6ff7)
+  
+  
+Endpoint :http://localhost:8080/project  
+Method: PUT  
+Sample request:-  
+{  
+     "id":"2",  
+     "name": "Project-2",  
+     "description": "Test project2-updated ",  
+     "startDate": "2024-04-27",  
+     "endDate": "2024-04-27",  
+     "status":"Started",  
+     "createdBy":"Susmita",  
+     "updatedBy":"Susmita"  
+ }  
+   
+ Response:  
+ {  
+     "id": 2,  
+     "name": "Project-2",  
+     "description": "Test project2-updated ",  
+     "startDate": "2024-04-27",  
+     "endDate": "2024-04-27",  
+     "status": "Started",  
+     "createdBy": "Susmita",  
+     "updatedBy": "Susmita"  
+ }  
+   
+ 3.Get Project by id :  
+ Endpoint: http://localhost:8080/project/2  
+ Method: GET  
+ Request:http://localhost:8080/project/2  
+ {  
+     "id": 2,  
+     "name": "Project-1",  
+     "description": "Test project ",  
+     "startDate": "2024-04-27",  
+     "endDate": "2024-04-27",  
+     "status": "In-Progress",  
+     "createdBy": "Susmita",  
+     "updatedBy": "John"  
+ }  
+   
+   
+ 4.Get all projects:  
+ Endpoint: http://localhost:8080/project/all  
+ Method: GET  
+ Request:http://localhost:8080/project/all  
+   
+ Response:  
+   
+ [  
+       {  
+           "id": 2,  
+           "name": "Project-1",  
+           "description": "Test project ",  
+           "startDate": "2024-04-27",  
+           "endDate": "2024-04-27",  
+           "status": "In-Progress",  
+           "createdBy": "Susmita",  
+           "updatedBy": "John"  
+       },  
+       {  
+           "id": 3,  
+           "name": "Project-2",  
+           "description": "Test project2 ",  
+           "startDate": "2024-04-27",  
+           "endDate": "2024-04-27",  
+           "status": "In-Progress",  
+           "createdBy": "Susmita",  
+           "updatedBy": "John"  
+       }  
+  ]  
+   
+   
+ 5.Delete a project by id:  
+ endpoint://localhost:8080/project/1  
+ Method:DELETE  
+ Request://localhost:8080/project/1  
+ Response:  
+ Project has been deleted successfully  ID :1  
+  
+Swagger :  
+![image](https://github.com/susmi170/project_management/assets/149704969/39990b2f-b9df-47d2-8462-d575d27a6ff7)  
 
  
